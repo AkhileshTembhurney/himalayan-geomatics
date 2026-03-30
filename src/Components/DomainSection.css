@@ -1,0 +1,188 @@
+.domain {
+
+    padding: 80px 40px;
+
+    background: #f5f7fb;
+
+    text-align: center;
+
+}
+
+
+/* title */
+
+.domain-title {
+
+    font-size: 34px;
+
+    color: #111;
+
+}
+
+.domain-sub {
+
+    margin-bottom: 30px;
+
+    color: #555;
+
+}
+
+
+/* tabs */
+
+.domain-tabs {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.tab {
+
+    padding: 14px 20px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    color: #111;
+
+}
+
+
+.tab.active {
+
+    background: #1e3a8a;
+
+    color: white;
+
+    position: relative;
+
+}
+
+
+.tab.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -10px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-left: 10px solid transparent;
+
+    border-right: 10px solid transparent;
+
+    border-top: 10px solid #1e3a8a;
+
+}
+
+
+/* card */
+
+.domain-card {
+
+    display: flex;
+
+    gap: 40px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: white;
+
+    padding: 30px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    color: #111;
+
+}
+
+
+/* text */
+
+.card-text {
+
+    max-width: 500px;
+
+    text-align: left;
+
+}
+
+
+.card-text h3 {
+
+    font-size: 26px;
+
+}
+
+
+.card-text p {
+
+    margin: 10px 0;
+
+}
+
+
+.card-text li {
+
+    margin-bottom: 6px;
+
+}
+
+
+/* button */
+
+.read-btn {
+
+    margin-top: 10px;
+
+    padding: 10px 20px;
+
+    background: #1e3a8a;
+
+    color: white;
+
+    border: none;
+
+}
+
+
+/* image */
+
+.card-img img {
+
+    width: 450px;
+
+    border-radius: 6px;
+
+}
+
+
+/* responsive */
+
+@media (max-width: 900px) {
+
+    .domain-card {
+
+        flex-direction: column;
+
+    }
+
+}

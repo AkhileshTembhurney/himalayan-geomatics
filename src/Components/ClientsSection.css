@@ -1,0 +1,131 @@
+.clients {
+
+    padding: 80px 40px;
+
+    background: linear-gradient(90deg,
+            #020617,
+            #0f172a);
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+.clients h2 {
+
+    margin-bottom: 40px;
+
+}
+
+
+/* row */
+
+.logo-row {
+
+    overflow: hidden;
+
+    margin: 15px 0;
+
+}
+
+
+/* track */
+
+.logo-track {
+
+    display: flex;
+
+    gap: 20px;
+
+    width: max-content;
+
+}
+
+
+/* animation */
+
+.logo-row.left .logo-track {
+
+    animation: moveLeft 20s linear infinite;
+
+}
+
+
+.logo-row.right .logo-track {
+
+    animation: moveRight 20s linear infinite;
+
+}
+
+
+/* card */
+
+.logo-card {
+
+    width: 180px;
+
+    height: 80px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px;
+
+    transition: 0.3s;
+
+}
+
+
+.logo-card img {
+
+    max-width: 100%;
+
+    max-height: 60px;
+
+}
+
+
+.logo-card:hover {
+
+    transform: scale(1.1);
+
+    box-shadow: 0 0 10px #3b82f6;
+
+}
+
+
+/* animations */
+
+@keyframes moveLeft {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+@keyframes moveRight {
+
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}

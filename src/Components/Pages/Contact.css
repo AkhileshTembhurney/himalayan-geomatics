@@ -1,0 +1,111 @@
+/* ===== MAIN ===== */
+
+.contact-container {
+    padding: 60px 40px;
+    background: #020617;
+    color: white;
+    min-height: 80vh;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* ===== LAYOUT ===== */
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* ===== LEFT SIDE ===== */
+
+.contact-info {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+}
+
+.info-item {
+    margin-top: 20px;
+}
+
+/* ===== RIGHT FORM ===== */
+
+.contact-form {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #1e293b;
+    color: white;
+}
+
+/* BUTTON */
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+
+    background: #3b82f6;
+    border: none;
+    border-radius: 6px;
+
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #2563eb;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ===== MAP SECTION ===== */
+
+.map-section {
+    margin-top: 50px;
+}
+
+.map-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}

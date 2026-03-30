@@ -1,0 +1,183 @@
+/* ===== HEADER ===== */
+
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 50px;
+    /* 🔥 increase side spacing */
+
+    box-sizing: border-box;
+    /* IMPORTANT */
+
+    background: linear-gradient(90deg, #1e3a8a, #0f172a);
+    z-index: 1000;
+}
+
+/* LEFT */
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-logo {
+    height: 40px;
+}
+
+.company-name {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* RIGHT */
+
+.header-right {
+    display: flex;
+    gap: 20px;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.header-right a:hover {
+    color: #60a5fa;
+}
+
+/* ========================= */
+/* ===== TABLET ===== */
+/* ========================= */
+
+@media (max-width: 1024px) {
+    .app-header {
+        padding: 10px 20px;
+    }
+
+    .header-right {
+        gap: 15px;
+    }
+
+    .company-name {
+        font-size: 16px;
+    }
+}
+
+/* ========================= */
+/* ===== MOBILE ===== */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .app-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .header-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header-right {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 8px;
+    }
+
+    .header-right a {
+        font-size: 14px;
+    }
+}
+
+/* ========================= */
+/* ===== SMALL MOBILE ===== */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+    .company-name {
+        font-size: 14px;
+    }
+
+    .app-logo {
+        height: 32px;
+    }
+
+    .header-right {
+        gap: 8px;
+    }
+
+    .header-right a {
+        font-size: 13px;
+    }
+}
+
+/* ===== HAMBURGER ===== */
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* ===== MOBILE ===== */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .app-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* SHOW BUTTON */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* HIDE MENU */
+    .header-right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #0f172a;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    /* SHOW WHEN ACTIVE */
+    .header-right.active {
+        display: flex;
+    }
+
+    .header-right a {
+        padding: 8px 0;
+        border-bottom: 1px solid #1e293b;
+    }
+
+    .header-right a:last-child {
+        border-bottom: none;
+    }
+}

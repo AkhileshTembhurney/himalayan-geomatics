@@ -1,0 +1,37 @@
+/* ===== GLOBAL RESET ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* 🔥 remove horizontal scroll */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  width: 100%;
+}
+
+/* ===== APP LAYOUT ===== */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  /* footer fix */
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  margin-top: 70px;
+  /* header height */
+  flex-grow: 1;
+  /* push footer down */
+}
